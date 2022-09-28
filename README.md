@@ -3,4 +3,5 @@ A command line utility to add and remove Russian trust certificates to access so
 
 # Usage
 `bash mitm.sh a` – add russian_trusted certificates.
+
 `bash mitm.sh d` – remove russian_trusted certificates.
