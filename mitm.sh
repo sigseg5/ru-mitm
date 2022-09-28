@@ -28,7 +28,7 @@ then
     # Download Russian Trusted Root CA
     wget https://gu-st.ru/content/Other/doc/russian_trusted_root_ca.cer
     
-    # Download sub cert
+    # Download sub certificates
     wget https://gu-st.ru/content/Other/doc/russian_trusted_sub_ca.cer
 
     # Convert CER to CRT
@@ -40,7 +40,7 @@ then
     echo "Removing CER's..."
     rm russian_trusted_root_ca.cer russian_trusted_sub_ca.cer
     
-    # Create dir for extra certs
+    # Create dir for extra certificates
     if [[ ! -d /usr/local/share/ca-certificates/extra ]]
     then
 	echo "Dir for extra certs not found, creating..."
